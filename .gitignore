@@ -3,6 +3,15 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+target/
+*.iml
+.idea
 
 ### STS ###
 .apt_generated
@@ -31,3 +40,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### mvn files ###
+.mvn
+mvnw
+mvnw.cmd
