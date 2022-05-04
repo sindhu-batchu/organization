@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+/**
+ * Dao for EMPLOYEE table
+ */
 @Data
 @Entity
 @Table(name="EMPLOYEE", schema="ORGANIZATION")

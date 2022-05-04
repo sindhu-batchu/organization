@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controller with APIs for connecting to EMPLOYEE_PROJECT table
+ */
 @RestController
 @RequestMapping("/employeeProject")
 public class EmployeeProjectController {

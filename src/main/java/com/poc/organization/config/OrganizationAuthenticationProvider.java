@@ -20,7 +20,7 @@ public class OrganizationAuthenticationProvider implements AuthenticationProvide
         UsernamePasswordAuthenticationToken token = null;
         String username = (String) authentication.getPrincipal();
         String password = (String) authentication.getCredentials();
-        //in realtime autheticate these against DB or any KMS
+        //hard coded here but in realtime authenticate these against DB or any KMS
         boolean usernameValid = username.equals("user");
         boolean passwordValid = password.equals("password");
 
@@ -34,6 +34,6 @@ public class OrganizationAuthenticationProvider implements AuthenticationProvide
 
     @Override
     public boolean supports(Class<?> authentication) {
-        return !ObjectUtils.isEmpty(authentication) ? authentication.equals(UsernamePasswordAuthenticationToken.class) : false;
+        return !ObjectUtils.isEmpty(authentication) && authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
 }

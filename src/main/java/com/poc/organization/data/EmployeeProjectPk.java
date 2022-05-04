@@ -6,6 +6,9 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
 
+/**
+ * Dao for composite primary key of EMPLOYEE_PROJECT table
+ */
 @Embeddable
 @Data
 public class EmployeeProjectPk implements Serializable {

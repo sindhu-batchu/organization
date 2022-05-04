@@ -20,6 +20,10 @@ public class EmployeeProjectServiceImpl implements EmployeeProjectService {
         return employeeProjectRepository.findAll();
     }
 
+    /**
+     * deletes entry from EMPLOYEE_PROJECT table
+     * @param disEmp employee project department object to disassociate
+     */
     @Transactional(Transactional.TxType.REQUIRED)
     public void disassociateEmployee(DisassociateEmployee disEmp) {
         EmployeeProjectPk employeeProjectPk = new EmployeeProjectPk();
