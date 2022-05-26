@@ -35,5 +35,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().httpBasic()
                 .and().anonymous()
                 .disable();
+        http.headers().frameOptions().disable();
     }
 }
